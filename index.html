@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drilling Contractors Craigavon | Gmac Utilities Ltd</title>
+    <meta name="description"
+        content="Gmac Utilities Ltd - Premier Drilling Contractors in Craigavon. Specializing in Horizontal Directional Drilling, Vacuum Excavation, and more.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #ff6b00;
+            /* Vibrant Orange */
+            --secondary-color: #007bff;
+            /* Bright Blue */
+            --dark-bg: #0f172a;
+            /* Deep Blue/Black */
+            --darker-bg: #020617;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --font-heading: 'Space Grotesk', sans-serif;
+            --font-body: 'Outfit', sans-serif;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-4 {
+            margin-top: 2rem;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+        }
+
+        /* Branding & Buttons */
+        .btn-primary {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            border: 2px solid var(--primary-color);
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--primary-color);
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            background: transparent;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--dark-bg);
+        }
+
+        /* Glass Effect */
+        .glass-effect {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 30px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(15px);
+            padding: 20px 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo .highlight {
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a:not(.btn-primary) {
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-links a:not(.btn-primary)::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            bottom: -5px;
+            left: 0;
+            transition: var(--transition);
+        }
+
+        .nav-links a:not(.btn-primary):hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://gmacutilities.com/wp-content/uploads/sb-instagram-feed-images/269607927_194423002893051_5609775586749542474_nfull.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 1;
+        }
+
+        .hero .badge {
+            background: rgba(255, 107, 0, 0.2);
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            display: inline-block;
+            border: 1px solid rgba(255, 107, 0, 0.4);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #e2e8f0;
+            margin-bottom: 30px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .keyword-link {
+            color: var(--primary-color);
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 107, 0, 0.3);
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0) translateX(-50%);
+            }
+
+            40% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+
+            60% {
+                transform: translateY(-5px) translateX(-50%);
+            }
+        }
+
+        /* About Section */
+        .about .row {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about .col-text {
+            flex: 1;
+        }
+
+        .about .col-image {
+            flex: 1;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .section-subtitle {
+            margin-bottom: 40px;
+            color: var(--text-muted);
+        }
+
+        .about h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .features-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+
+        .features-list i {
+            color: var(--primary-color);
+        }
+
+        .image-wrapper img {
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .service-card .icon-box {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 107, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            height: 300px;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            padding: 20px;
+            transition: var(--transition);
+            z-index: 2;
+            border-radius: 0;
+            border: none;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .project-card:hover .project-overlay {
+            bottom: 0;
+        }
+
+        .project-overlay h4 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        /* Testimonials */
+        .testimonials-slider {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card .stars {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card h4 {
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .testimonial-card span {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+        }
+
+        /* Contact Section & Form */
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: white;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .contact .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .contact-item i {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .contact-item h4 {
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .map-wrapper {
+            height: 100%;
+            min-height: 500px;
+            padding: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .map-link {
+            display: inline-block;
+            margin-top: 5px;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+
+        /* Footer */
+        footer {
+            background: var(--darker-bg);
+            padding: 50px 0 20px;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-logo h2 {
+            color: white;
+        }
+
+        .footer-links a {
+            margin: 0 15px;
+            color: var(--text-muted);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .about .row {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .contact .row {
+                grid-template-columns: 1fr;
+            }
+
+            .map-wrapper {
+                min-height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                /* Mobile menu needed */
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--darker-bg);
+                flex-direction: column;
+                padding: 20px;
+                border-bottom: 1px solid var(--glass-border);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="https://gmacutilities.com/?utm_source=GoogleBusinessProfile&utm_campaign=CloudLink" class="logo">
+                Gmac <span class="highlight">Utilities Ltd</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Details</a>
+                <a href="#contact" class="btn-primary">Contact Us</a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge">Professional Utilities Solution</span>
+            <h1>Premier Drilling Contractors Craigavon</h1>
+            <p>Leading the way in utility infrastructure with advanced technology and expert teams.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Get a Quote</a>
+                <a href="#services" class="btn-secondary">Our Services</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-text">
+                    <h2 class="section-title">Who We Are</h2>
+                    <h3>Gmac Utilities Ltd</h3>
+
+                    <p>At <a href="https://gmacutilities.com/?utm_source=GoogleBusinessProfile&utm_campaign=CloudLink"
+                            class="text-link">Gmac Utilities Ltd</a>, we understand the importance of finding the right
+                        solution for your project. As premier <a
+                            href="https://gmacutilities.com/?utm_source=GoogleBusinessProfile&utm_campaign=CloudLink"
+                            class="keyword-link">Drilling Contractors Craigavon</a>, we are committed to looking for the
+                        right solutions for our clients.</p>
+
+                    <p>With our expertise and experience in ecologically sensitive areas, we can help you maintain road
+                        and rail operation, even aircraft runways, without disturbing the main infrastructure above the
+                        utility placement. We offer a variety of trenchless options to choose from, including <a
+                            href="https://gmacutilities.com/horizontal-directional-drilling-hdd/?utm_source=GoogleBusinessProfile&utm_campaign=CloudLink"
+                            class="keyword-link">Horizontal Directional Drilling Craigavon</a> and guided auger-boring.
+                    </p>
+
+                    <p>Our services also extend to Vacuum Excavation Craigavon and other specialized techniques.
+                        Whether you need Directional Drilling Contractors Craigavon or solutions for
+                        difficult terrain, our professional team delivers creative and efficient results.</p>
+
+                    <p><a href="https://gmacutilities.com/?utm_source=GoogleBusinessProfile&utm_campaign=CloudLink"
+                            class="text-link">Gmac Utilities Ltd</a> is committed to supplying an efficient and
+                        environmentally
+                        friendly service to our clients, backed by our core values of Great Services, Highest Standards,
+                        and Creative Solutions.</p>
+
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Expert Team</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced Technology</li>
+                        <li><i class="fas fa-check-circle"></i> Safety First Approach</li>
+                    </ul>
+                </div>
+                <div class="col-image">
+                    <div class="image-wrapper glass-effect">
+                        <!-- Using one of the extracted images -->
+                        <img src="https://gmacutilities.com/wp-content/uploads/sb-instagram-feed-images/271555806_463121295208873_5917759751562101972_nfull.jpg"
+                            alt="Gmac Utilities Team">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Our Services</h2>
+            <p class="section-subtitle text-center">Comprehensive utility solutions tailored to your needs.</p>
+
+            <div class="services-grid">
+                <!-- Service 1: Secondary Keyword -->
+                <div class="service-card glass-effect">
+                    <div class="icon-box">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3><a
+                            href="https://gmacutilities.com/horizontal-directional-drilling-hdd/?utm_source=GoogleBusinessProfile&utm_campaign=CloudLink">Horizontal
+                            Directional Drilling Craigavon</a></h3>
+                    <p>Trenchless technology for installing underground utilities with minimal disruption.</p>
+                </div>
+
+                <!-- Service 2: Vacuum Excavation -->
+                <div class="service-card glass-effect">
+                    <div class="icon-box">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Vacuum Excavation</h3>
+                    <p>Safe and efficient excavation using high-powered vacuum suction technology.</p>
+                </div>
+
+                <!-- Service 3: Auger Boring -->
+                <div class="service-card glass-effect">
+                    <div class="icon-box">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Guided Auger Boring</h3>
+                    <p>Precision trenchless installation for gravity sewers and other critical grade lines.</p>
+                </div>
+
+                <!-- Service 4: Percussion Moling -->
+                <div class="service-card glass-effect">
+                    <div class="icon-box">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Percussion Moling</h3>
+                    <p>Cost-effective method for installing small diameter pipes over short distances.</p>
+                </div>
+
+                <!-- Service 5: Timber Heading -->
+                <div class="service-card glass-effect">
+                    <div class="icon-box">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Timber Heading</h3>
+                    <p>Traditional tunneling method for accessing utilities in difficult-to-reach areas.</p>
+                </div>
+
+                <!-- Service 6: Electro Fusion -->
+                <div class="service-card glass-effect">
+                    <div class="icon-box">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electro Fusion</h3>
+                    <p>Specialized welding process ensuring secure and durable pipe connections.</p>
+                </div>
+
+                <!-- Service 7: Shaft Sinking -->
+                <div class="service-card glass-effect">
+                    <div class="icon-box">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                    <h3>Shaft Sinking</h3>
+                    <p>Expert excavation of vertical shafts for utility access and infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Our Projects</h2>
+            <p class="section-subtitle text-center">A glimpse into our successful utility infrastructure projects.</p>
+            <div class="projects-grid">
+                <!-- Using placeholders from previously extracted images -->
+                <div class="project-card">
+                    <img src="https://gmacutilities.com/wp-content/uploads/sb-instagram-feed-images/269607927_194423002893051_5609775586749542474_nfull.jpg"
+                        alt="Drilling Project 1">
+                    <div class="project-overlay glass-effect">
+                        <h4>Infrastructure Upgrade</h4>
+                        <p>Successful HDD installation for major utility provider.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://gmacutilities.com/wp-content/uploads/sb-instagram-feed-images/266489264_6594261527313482_4481250062652360395_nfull.jpg"
+                        alt="Drilling Project 2">
+                    <div class="project-overlay glass-effect">
+                        <h4>Residential Connection</h4>
+                        <p>Minimal disruption vacuum excavation in urban area.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://gmacutilities.com/wp-content/uploads/sb-instagram-feed-images/238982357_540708590381362_3916335681039728020_nfull.jpg"
+                        alt="Drilling Project 3">
+                    <div class="project-overlay glass-effect">
+                        <h4>Pipeline Maintenance</h4>
+                        <p>Emergency repair and maintenance using percussion moling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Client Testimonials</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card glass-effect text-center">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Gmac Utilities Ltd provided exceptional service. Their horizontal directional drilling team was
+                        professional, efficient, and left the site spotless."</p>
+                    <h4>James O'Connor</h4>
+                    <span>Construction Manager</span>
+                </div>
+                <div class="testimonial-card glass-effect text-center">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"We used their vacuum excavation services for a complex city center project. The precision and
+                        safety standards were outstanding."</p>
+                    <h4>Sarah Sarahson</h4>
+                    <span>Project Lead</span>
+                </div>
+                <div class="testimonial-card glass-effect text-center">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Highly recommend Gmac for any utility infrastructure work. Reliable, knowledgeable, and great to
+                        work with."</p>
+                    <h4>Michael Smith</h4>
+                    <span>Civil Engineer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-info glass-effect">
+                    <h2>Contact Us</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Andrew" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Parker" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" id="title" name="title" placeholder="Project Manager">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+
+                    <div class="contact-details-box mt-4">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>16 Drumgaw Rd, Armagh BT60 2AD, United Kingdom</p>
+                                <a href="https://www.google.com/maps?cid=4520520098057119580" target="_blank"
+                                    class="map-link">View on Google Maps</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+442837511911">+44 28 3751 1911</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@gmacutilities.com">info@gmacutilities.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-map">
+                    <div class="map-wrapper glass-effect">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.913013116755!2d-6.629394737779036!3d54.32716048072048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486094b0742678f7%3A0x3ebc1d1414b5675c!2sGmac%20Utilities%20Ltd!5e0!3m2!1sen!2sqa!4v1765541468530!5m2!1sen!2sqa"
+                            width="100%" height="100%" style="border:0; min-height: 100%;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Gmac Utilities Ltd</h2>
+                </div>
+                <div class="footer-links">
+                    <a
+                        href="https://gmacutilities.com/?utm_source=GoogleBusinessProfile&utm_campaign=CloudLink">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Gmac Utilities Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const navItems = document.querySelectorAll('.nav-links a');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = hamburger.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close menu when link is clicked
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburger.querySelector('i').classList.remove('fa-times');
+                        hamburger.querySelector('i').classList.add('fa-bars');
+                    }
+                });
+            });
+
+            // Sticky Navbar
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+                    navbar.style.padding = '15px 0';
+                    navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+                } else {
+                    navbar.style.background = 'rgba(15, 23, 42, 0.8)';
+                    navbar.style.padding = '20px 0';
+                    navbar.style.boxShadow = 'none';
+                }
+            });
+
+            // Scroll Reveal Animation (Simple Intersection Observer)
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.service-card, .section-title, .col-text, .col-image, .contact-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'all 0.6s ease-out';
+                observer.observe(el);
+            });
+
+            // CSS for visible state (injected via JS for simplicity or could be in CSS)
+            const style = document.createElement('style');
+            style.innerHTML = `
+        .visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+
+</html>
